@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="urn:webprotege:ontology:32b30337-87a8-4978-875b-2a7a963c2e50#"
-     xml:base="urn:webprotege:ontology:32b30337-87a8-4978-875b-2a7a963c2e50"
+<rdf:RDF xmlns="urn:webprotege:ontology:ea47013d-ed90-4b4f-9676-714bcaf989e9#"
+     xml:base="urn:webprotege:ontology:ea47013d-ed90-4b4f-9676-714bcaf989e9"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:webprotege="http://webprotege.stanford.edu/">
-    <owl:Ontology rdf:about="urn:webprotege:ontology:32b30337-87a8-4978-875b-2a7a963c2e50"/>
+     xmlns:names="http://ontologies.org/names_onto/">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:ea47013d-ed90-4b4f-9676-714bcaf989e9"/>
     
 
 
@@ -22,76 +22,142 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/R7amPLuoKwPO9UBgmVFuwds -->
+    <!-- names_onto/belongs_to -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7amPLuoKwPO9UBgmVFuwds">
+    <owl:ObjectProperty rdf:about="names_onto/belongs_to">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
-        <rdfs:label xml:lang="en">is_name_for</rdfs:label>
+        <rdfs:label>belongs_to</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RB6Kc4aCCnRSUHcYglWVpVQ -->
+    <!-- names_onto/has -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RB6Kc4aCCnRSUHcYglWVpVQ">
+    <owl:ObjectProperty rdf:about="names_onto/has">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RZNQcQHENHHTVXWWXQdw80"/>
-        <rdfs:label xml:lang="en">is_alias_for</rdfs:label>
+        <rdfs:label>has</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RBFHuwbONJ2wRpzO0KPW8el -->
+    <!-- names_onto/has_name -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBFHuwbONJ2wRpzO0KPW8el">
+    <owl:ObjectProperty rdf:about="names_onto/has_name">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP"/>
-        <rdfs:label xml:lang="en">has_name</rdfs:label>
+        <rdfs:domain rdf:resource="names_onto/Company"/>
+        <rdfs:range rdf:resource="names_onto/Name"/>
+        <rdfs:label>has_name</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RBJ06HEnf4r51aHx6Zm8O4Y -->
+    <!-- names_onto/has_social_media_name -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBJ06HEnf4r51aHx6Zm8O4Y">
+    <owl:ObjectProperty rdf:about="names_onto/has_social_media_name">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7FLHTdDBWs4t11folNrFK"/>
-        <rdfs:label xml:lang="en">is_language</rdfs:label>
+        <rdfs:domain rdf:resource="names_onto/Company"/>
+        <rdfs:range rdf:resource="names_onto/Name"/>
+        <rdfs:label>has_social_media_name</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RBszsG5p0olzAgAqOisOD7x -->
+    <!-- names_onto/is_alias_for -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBszsG5p0olzAgAqOisOD7x">
-        <rdfs:label xml:lang="en">ist_tochter_von</rdfs:label>
+    <owl:ObjectProperty rdf:about="names_onto/is_alias_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="names_onto/Alias"/>
+        <rdfs:range rdf:resource="names_onto/Company"/>
+        <rdfs:label>is_alias_for</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RCP1vy1u5K2Wdx7GVN5Sbdp -->
+    <!-- names_onto/is_child_company_of -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCP1vy1u5K2Wdx7GVN5Sbdp">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9"/>
-        <rdfs:label xml:lang="en">is_word_in</rdfs:label>
+    <owl:ObjectProperty rdf:about="names_onto/is_child_company_of">
+        <rdfs:label>is_child_company_of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RDljUmUAptYMGMi4UZLMbjh -->
+    <!-- names_onto/is_language -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RDljUmUAptYMGMi4UZLMbjh">
+    <owl:ObjectProperty rdf:about="names_onto/is_language">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RDwak5QpLpk7rMiW7hu8GnG"/>
-        <rdfs:label xml:lang="en">is_subsidary_company</rdfs:label>
+        <rdfs:range rdf:resource="names_onto/Dialect"/>
+        <rdfs:label>is_language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/is_name_for -->
+
+    <owl:ObjectProperty rdf:about="names_onto/is_name_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="names_onto/Name"/>
+        <rdfs:range rdf:resource="names_onto/Company"/>
+        <rdfs:label>is_name_for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/is_parent_company_of -->
+
+    <owl:ObjectProperty rdf:about="names_onto/is_parent_company_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="names_onto/Company"/>
+        <rdfs:range rdf:resource="names_onto/Subsidiary_company"/>
+        <rdfs:label>is_parent_company_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/is_subclass_of -->
+
+    <owl:ObjectProperty rdf:about="names_onto/is_subclass_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>is_subclass_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/is_subsidary_company_of -->
+
+    <owl:ObjectProperty rdf:about="names_onto/is_subsidary_company_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="names_onto/Subsidiary_company"/>
+        <rdfs:range rdf:resource="names_onto/Company"/>
+        <rdfs:label>is_subsidary_company_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/is_word_in -->
+
+    <owl:ObjectProperty rdf:about="names_onto/is_word_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="names_onto/Name"/>
+        <rdfs:range rdf:resource="names_onto/Language"/>
+        <rdfs:label>is_word_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/translates_to -->
+
+    <owl:ObjectProperty rdf:about="names_onto/translates_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>translates_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- names_onto/type -->
+
+    <owl:ObjectProperty rdf:about="names_onto/type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -107,86 +173,77 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/R7RdJyOKqSFjWQp7MrpQQUb -->
+    <!-- names_onto/has_alphabet -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/R7RdJyOKqSFjWQp7MrpQQUb">
+    <owl:DatatypeProperty rdf:about="names_onto/has_alphabet">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_cio</rdfs:label>
+        <rdfs:label>has_alphabet</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/R7fITLGKlxAdEr7tW4QU4B5 -->
+    <!-- names_onto/has_ceo -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/R7fITLGKlxAdEr7tW4QU4B5">
+    <owl:DatatypeProperty rdf:about="names_onto/has_ceo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RDwak5QpLpk7rMiW7hu8GnG"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_ceo</rdfs:label>
+        <rdfs:label>has_ceo</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/R9W0InrDpFBV2I2KQUPMDTx -->
+    <!-- names_onto/has_cio -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/R9W0InrDpFBV2I2KQUPMDTx">
+    <owl:DatatypeProperty rdf:about="names_onto/has_cio">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_region</rdfs:label>
+        <rdfs:label>has_cio</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/R9fF0CYojtioErNknCYDuWD -->
+    <!-- names_onto/has_company_size -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/R9fF0CYojtioErNknCYDuWD">
+    <owl:DatatypeProperty rdf:about="names_onto/has_company_size">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_alphabet</rdfs:label>
+        <rdfs:label>has_company_size</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RDc2RDIejWSUHv1IkcD9Xom -->
+    <!-- names_onto/has_company_type -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/RDc2RDIejWSUHv1IkcD9Xom">
+    <owl:DatatypeProperty rdf:about="names_onto/has_company_type">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_turnover_of</rdfs:label>
+        <rdfs:label>has_company_type</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RDcigxX0lXEB2UJCLa8Oog2 -->
+    <!-- names_onto/has_region -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/RDcigxX0lXEB2UJCLa8Oog2">
+    <owl:DatatypeProperty rdf:about="names_onto/has_region">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_company_size</rdfs:label>
+        <rdfs:label>has_region</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/RIHM3aLnTpV7YXBvKzPLQ -->
+    <!-- names_onto/has_turnover_of -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/RIHM3aLnTpV7YXBvKzPLQ">
+    <owl:DatatypeProperty rdf:about="names_onto/has_turnover_of">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">has_company_type</rdfs:label>
+        <rdfs:label>has_turnover_of</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -202,98 +259,81 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/R7FLHTdDBWs4t11folNrFK -->
+    <!-- names_onto/Alias -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7FLHTdDBWs4t11folNrFK">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9"/>
-        <rdfs:label xml:lang="en">owl:Dialect</rdfs:label>
+    <owl:Class rdf:about="names_onto/Alias">
+        <rdfs:subClassOf rdf:resource="names_onto/Name"/>
+        <rdfs:label>Alias</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9 -->
+    <!-- names_onto/Company -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:Language</rdfs:label>
+    <owl:Class rdf:about="names_onto/Company">
+        <rdfs:label>Company</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP -->
+    <!-- names_onto/Dialect -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP">
-        <rdfs:label xml:lang="en">owl:Name</rdfs:label>
+    <owl:Class rdf:about="names_onto/Dialect">
+        <rdfs:subClassOf rdf:resource="names_onto/Language"/>
+        <rdfs:label>Dialect</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM -->
+    <!-- names_onto/Language -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM">
-        <rdfs:label xml:lang="en">owl:Company</rdfs:label>
+    <owl:Class rdf:about="names_onto/Language">
+        <rdfs:label>Language</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RDwak5QpLpk7rMiW7hu8GnG -->
+    <!-- names_onto/Name -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDwak5QpLpk7rMiW7hu8GnG">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
-        <rdfs:label xml:lang="en">owl:Subsidiary_company</rdfs:label>
+    <owl:Class rdf:about="names_onto/Name">
+        <rdfs:label>Name</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RZNQcQHENHHTVXWWXQdw80 -->
+    <!-- names_onto/Subsidiary_company -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RZNQcQHENHHTVXWWXQdw80">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP"/>
-        <rdfs:label xml:lang="en">owl:Alias</rdfs:label>
+    <owl:Class rdf:about="names_onto/Subsidiary_company">
+        <rdfs:subClassOf rdf:resource="names_onto/Company"/>
+        <rdfs:label>Subsidiary_company</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- names_onto/TikTok_Username -->
 
+    <owl:Class rdf:about="names_onto/TikTok_Username">
+        <rdfs:subClassOf rdf:resource="names_onto/Name"/>
+        <rdfs:label>TikTok_Username</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/R1tTpXLvo8OlfGKD1B9sD8 -->
+    <!-- names_onto/Twitter_Username -->
 
-    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R1tTpXLvo8OlfGKD1B9sD8">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7Q5cf1EDjvRLkTkUyl9JX9"/>
-        <webprotege:R9fF0CYojtioErNknCYDuWD rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Latin&quot;</webprotege:R9fF0CYojtioErNknCYDuWD>
-        <rdfs:label>English</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="names_onto/Twitter_Username">
+        <rdfs:subClassOf rdf:resource="names_onto/Name"/>
+        <rdfs:label>Twitter_Username</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/R8ov2vaR2o6xwusUMLP6Ttc -->
+    <!-- names_onto/Youtube_Username -->
 
-    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8ov2vaR2o6xwusUMLP6Ttc">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBrxE3bYZOPwTUGlOWlZFPP"/>
-        <webprotege:R7amPLuoKwPO9UBgmVFuwds rdf:resource="http://webprotege.stanford.edu/R9Mm4K8OsE35OMG2l8lzmMB"/>
-        <webprotege:RCP1vy1u5K2Wdx7GVN5Sbdp rdf:resource="http://webprotege.stanford.edu/R1tTpXLvo8OlfGKD1B9sD8"/>
-        <rdfs:label>Nokia</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9Mm4K8OsE35OMG2l8lzmMB -->
-
-    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9Mm4K8OsE35OMG2l8lzmMB">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCKl8FbOV20AiN1ykJ9g0tM"/>
-        <webprotege:RBFHuwbONJ2wRpzO0KPW8el rdf:resource="http://webprotege.stanford.edu/R8ov2vaR2o6xwusUMLP6Ttc"/>
-        <webprotege:RDcigxX0lXEB2UJCLa8Oog2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;More than 1000&quot;</webprotege:RDcigxX0lXEB2UJCLa8Oog2>
-        <rdfs:label>Q1418</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="names_onto/Youtube_Username">
+        <rdfs:subClassOf rdf:resource="names_onto/Name"/>
+        <rdfs:label>Youtube_Username</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
