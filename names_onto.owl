@@ -271,6 +271,7 @@
     <!-- names_onto/Company -->
 
     <owl:Class rdf:about="names_onto/Company">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>Company</rdfs:label>
     </owl:Class>
     
@@ -288,6 +289,7 @@
     <!-- names_onto/Language -->
 
     <owl:Class rdf:about="names_onto/Language">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>Language</rdfs:label>
     </owl:Class>
     
@@ -296,6 +298,7 @@
     <!-- names_onto/Name -->
 
     <owl:Class rdf:about="names_onto/Name">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>Name</rdfs:label>
     </owl:Class>
     
